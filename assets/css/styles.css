@@ -7,10 +7,12 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --primary-color: #880E4F;
+  --secondary-color: #009688;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
+  --white: #ffffff;
+  --black: #000000;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -43,9 +45,14 @@ a:hover {
   color: var(--secondary-color);
 }
 
-body {
+body * {
   font-family: var(--font-family);
+  color: var(--fontColor);
 }
+body {
+    background: var(--bg);
+}
+
 
 section {
   /* max-width: 1100px;
@@ -111,8 +118,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 17.5rem;
+  width: 17.5rem;
 }
 
 .bio {
@@ -426,4 +433,13 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
+
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
 }
